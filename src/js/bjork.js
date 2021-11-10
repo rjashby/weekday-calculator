@@ -5,4 +5,9 @@ export default class Bjork {
     this.side3 = side3;
     this.side4 = side4;
   }
+
+  checkType() {
+    // if ((this.side1 > (this.side2 + this.side3)) || (this.side2 > (this.side1 + this.side3)) || (this.side3 > (this.side1 + this.side2))) {
+    //   return "not a bjork";
+  }
 }

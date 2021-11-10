@@ -9,5 +9,8 @@ describe("Bjork", () => {
     expect(bjork1.side3).toEqual(5);
     expect(bjork1.side4).toEqual(3);
   });
-
-});
+  test('should correctly determine whether four lengths are not a bjork', () => {
+    const notBjork = new Bjork(3, 9, 22, 4);
+    expect(notBjork.checkType()).toEqual("not a bjork");
+  });
+})
