@@ -8,6 +8,4 @@ describe("Weekday", () => {
     expect(weekday1.month).toEqual(12);
     expect(weekday1.year).toEqual(1912);
   });
-
-  test("It should ")
 });
