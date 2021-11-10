@@ -4,16 +4,42 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
   <title>Weekday Calculator</title>
 </head>
 <body>
   <div class="container">
     <h1>Calculate What Day of the Week It Was for any Date in History!</h1>
+    <img src="https://www.thesprucepets.com/thmb/SlxjoBXUHc48_GEgpuM0Taq7wIM=/1080x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/51152221_1137081246458617_3144049680416140765_n-5c73f04d46e0fb0001835dd2.jpg" alt="such a pup!">
       <form>
         <div class="form-group">
-            <label for="date">Enter a Date:</label>
+            <label for="date">Enter a Two Digit Day:</label>
             <input id="date" type="text">
         </div>
+        <hr>
+        <div class="form-group">
+          <h4>Pick a month</h4>
+          <select id="month" class="form-control">
+            <option value="jan">January</option>
+            <option value="feb">February</option>
+            <option value="mar">March</option>
+            <option value="apr">April</option>
+            <option value="may">May</option>
+            <option value="jun">June</option>
+            <option value="jul">July</option>
+            <option value="aug">August</option>
+            <option value="sept">September</option>
+            <option value="oct">October</option>
+            <option value="nov">November</option>
+            <option value="dec">December</option>
+          </select>
+        </div>
+        <hr>
+        <div class="form-group">
+          <label for="year">Type a Four Digit Year:</label>
+          <input id="year" type="number">
+      </div>
+        <br>
         <button class="btn btn-dark" type="submit">Show the weekday!</button>
       </form>
   </div>
