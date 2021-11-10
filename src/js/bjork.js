@@ -7,7 +7,8 @@ export default class Bjork {
   }
 
   checkType() {
-    // if ((this.side1 > (this.side2 + this.side3)) || (this.side2 > (this.side1 + this.side3)) || (this.side3 > (this.side1 + this.side2))) {
-    //   return "not a bjork";
+    if ((this.side1 > (this.side2 + this.side3)) || (this.side2 > (this.side1 + this.side3)) || (this.side3 > (this.side1 + this.side2))) {
+      return "not a bjork";
+    }
   }
 }
