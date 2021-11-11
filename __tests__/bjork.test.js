@@ -30,8 +30,8 @@ describe("Bjork", () => {
     expect(pheeBjork.checkType()).toEqual("phee bjork");
   });
 
-  test("should correctly determine whether four lengths create a 'phi bjork'", () => {
-    const phiBjork = new Bjork(6, 6, 6, 8);
-    expect(phiBjork.checkType()).toEqual("phi bjork");
-  });
+  // test("should correctly determine whether four lengths create a 'phi bjork'", () => {
+  //   const phiBjork = new Bjork(6, 6, 6, 8);
+  //   expect(phiBjork.checkType()).toEqual("phi bjork");
+  // });
 })
