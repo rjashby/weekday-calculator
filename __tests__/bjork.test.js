@@ -10,13 +10,18 @@ describe("Bjork", () => {
     expect(bjork1.side4).toEqual(3);
   });
   
-  test('should correctly determine whether four lengths are not a bjork', () => {
+  test("should correctly determine whether four lengths are not a bjork", () => {
     const notBjork = new Bjork(3, 9, 22, 4);
     expect(notBjork.checkType()).toEqual("not a bjork");
   });
 
-  test('should correctly determine whether four lengths are not a bjork', () => {
+  test("should correctly determine whether four lengths create a 'bip bjork'", () => {
     const bipBjork = new Bjork(3, 3, 5, 4);
     expect(bipBjork.checkType()).toEqual("bip bjork");
+  });
+
+  test("should correctly determine whether four lengths create a 'bop bjork'", () => {
+    const bopBjork = new Bjork(3, 3, 4, 4);
+    expect(bopBjork.checkType()).toEqual("bop bjork");
   });
 })

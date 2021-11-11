@@ -6,7 +6,7 @@ export default class Pizza {
   }
 
   checkType() {
-    if ((this.crust = "thick") && (this.topping = "cheese")) {
+    if ((this.crust === "thick") && (this.topping === "cheese")) {
       return "Classic Pizza"
     } else {
       return "Other Pizza"
@@ -14,4 +14,4 @@ export default class Pizza {
   }
 }
 
-// constructor(crust = ["thin", "thick"], topping = ["cheese", "pepperoni", "veggie"], sauce = ["white", "red"]) {
+//constructor(crust = ["thin", "thick"], topping = ["cheese", "pepperoni", "veggie"], sauce = ["white", "red"]) {

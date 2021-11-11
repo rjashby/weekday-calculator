@@ -10,7 +10,7 @@ describe("Pizza", () => {
   });
 
   test("It should check to see what type of pizza it is based on pizza profiles", () => { 
-  const pizzaTest = new Pizza ("thin", "cheese", "red")
+  const pizzaTest = new Pizza ("thick", "cheese", "red")
   expect(pizzaTest.checkType()).toBe("Classic Pizza")
   });
 });
