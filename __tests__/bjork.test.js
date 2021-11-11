@@ -24,4 +24,14 @@ describe("Bjork", () => {
     const bopBjork = new Bjork(3, 3, 4, 4);
     expect(bopBjork.checkType()).toEqual("bop bjork");
   });
+
+  test("should correctly determine whether four lengths create a 'phee bjork'", () => {
+    const pheeBjork = new Bjork(2, 4, 6, 8);
+    expect(pheeBjork.checkType()).toEqual("phee bjork");
+  });
+
+  test("should correctly determine whether four lengths create a 'phi bjork'", () => {
+    const phiBjork = new Bjork(6, 6, 6, 8);
+    expect(phiBjork.checkType()).toEqual("phi bjork");
+  });
 })

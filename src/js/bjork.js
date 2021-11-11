@@ -9,8 +9,14 @@ export default class Bjork {
   checkType() {
     if ((this.side1 > (this.side2 + this.side3)) || (this.side2 > (this.side1 + this.side3)) || (this.side3 > (this.side1 + this.side2))) {
       return "not a bjork";
-    } else if ((this.side1 == this.side2) && ((this.side3 !== this.side4))) {
+    } else if ((this.side1 == this.side2) && (this.side3 !== this.side1 || this.side2) && ((this.side3 !== this.side4))) {
       return "bip bjork";
+    } else if ((this.side1 == this.side2) && ((this.side3 == this.side4))) {
+      return "bop bjork";
+    } else if ((this.side1 !== this.side2 || this.side3 || this.side4) && (this.side2 !== this.side1 || this.side3 || this.side4) && (this.side3 !== this.side1 || this.side2 || this.side4) && (this.side4 !== this.side1 || this.side2 || this.side3)) {
+      return "phee bjork";
+    } else if ((this.side1 == this.side2 && this.side3) && (this.side2 == this.side1 && this.side3) && (this.side3 == this.side1 && this.side2) && ((this.side4 !== this.side1 || this.side2 || this.side3))) {
+      return "phi bjork";
     }
   }
 }
